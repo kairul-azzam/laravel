@@ -18,8 +18,12 @@ Route::get('/kontak', function () {
 Route::get('/fasilitas', function () {
     return view('fasilitas');
 });
+Route::get('/dashboard', function () {
+    return view('dashboard');
+});
 
 Route::get('/berita', [App\Http\Controllers\PostController::class, 'index'])->name('berita.index');
 Route::get('/berita/{id}', [App\Http\Controllers\PostController::class, 'show'])->name('berita.show');
 Route::get('/siswa', [App\Http\Controllers\SiswaController::class, 'index'])->name('siswa.index');
+Route::get('/siswa/{id}', [App\Http\Controllers\SiswaController::class, 'show'])->name('siswa.show');
 

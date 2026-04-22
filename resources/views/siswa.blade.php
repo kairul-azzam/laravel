@@ -11,7 +11,9 @@
                     <div class="flex items-center gap-x-6">
                         <img src="{{ $siswa->photo ?? 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80' }}" alt="{{ $siswa->nama }}" class="size-16 rounded-full outline-1 -outline-offset-1 outline-white/10" />
                         <div>
-                            <h3 class="text-base/7 font-semibold tracking-tight text-white">{{ $siswa->nama }}</h3>
+                            <a href="{{ route('siswa.show', $siswa->id) }}" class="text-lg font-semibold text-white hover:text-indigo-400">
+                                <h3 class="text-base/7 font-semibold tracking-tight text-white">{{ $siswa->nama }}</h3>
+                            </a>
                             <p class="text-sm/6 font-semibold text-indigo-400">{{ $siswa->kelas}}</p>
                             <p class="text-sm/6 font-semibold text-indigo-400">{{ $siswa->jurusan}}</p>
                         </div>

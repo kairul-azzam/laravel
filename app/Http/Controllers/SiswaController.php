@@ -15,4 +15,11 @@ class SiswaController extends Controller
         return view('siswa', compact('siswas'));
 
     }
+    public function show($id)
+    {
+        //mengambil data dari tabel posts berdasarkan id yang dipilih dan menyimpannya dalam variabel $berita
+        $siswas = \App\Models\Siswa::findOrFail($id);
+
+        return view('detail_siswa', compact('siswas'));
+}
 }
