@@ -30,6 +30,8 @@
                 <a href="/kontak" class="text-sm/6 font-semibold text-white">Kontak</a>
                 <a href="/berita" class="text-sm/6 font-semibold text-white">Berita</a>
                 <a href="/fasilitas" class="text-sm/6 font-semibold text-white">Fasilitas</a>
+                
+
             </div>
             <div class="hidden lg:flex lg:flex-1 lg:justify-end">
                 <a href="#" class="text-sm/6 font-semibold text-white">Log in <span aria-hidden="true">&rarr;</span></a>
